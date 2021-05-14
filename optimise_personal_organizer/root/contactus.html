@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us - Optimise Organizer</title>
+    <link rel="stylesheet" href="application.css">
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="bt-menu">
+      <label for="bt-menu">&#9776;</label>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" target="_blank">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+          <li><a href="contactus.html" target="_blank">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="form" action="" method="post">
+        <h1>Contact Us</h1>
+        <p class="name">
+          <input type="text" name="name" placeholder="Please enter your name" required="required">
+        </p>
+
+        <p class="email">
+          <input type="email" name="email" placeholder="Please enter your email address" required="required">
+        </p>
+
+        <p class="phone">
+          <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone" placeholder="Please enter your phone number" required="required">
+        </p>
+
+        <p class="message">
+          <textarea name="message" placeholder="Please enter your message" required="required"></textarea>
+        </p>
+
+        <p class="submit">
+          <input type="submit" name="submit" value="Submit">
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
