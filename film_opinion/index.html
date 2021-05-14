@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FilmOpinion!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="interface">
+        <header id="header">
+            <hgroup>
+                <h1>FilmOpinion!</h1>
+                <h2>All you want to know about movies</h2>
+            </hgroup>
+            <nav id="menu">
+                <h1>Menu</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Films</a></li> <!--Not working, only for te creation of the menu-->
+                    <li><a href="index.html">About us</a></li> <!--Not working, only for te creation of the menu-->
+                    <li><a href="index.html">Contact us</a></li> <!--Not working, only for te creation of the menu-->
+                </ul>
+            </nav>
+        </header>   
+        <section id="body">
+            <p class="out">Movies, also known as films, are a type of visual communication which uses moving pictures and sound to tell stories or teach people something.</p>
+            <p class="out">Please select a genre of film and a movie:</p>
+            <select name="genre" id="genre" onchange="populate('genre','films')">
+                <option value="null">Select an option</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="science">Science Fiction</option>
+            </select>
+
+            <select name="films" id="films" onchange="show(this.value)"></select><br><br>
+            <article id="initial">
+                <header>
+                    <h2>Let's Talk About Movies</h2>
+                </header>
+                <img src="images/banner-initial.png" alt="Movies" class="banner">
+                <p>People in every part of the world watch movies as a type of entertainment, a way to have fun. For some people, fun movies can mean movies that make them laugh, while for others it can mean movies that make them cry, or feel afraid.
+                Most movies are made so that they can be shown on big screens at movie theatres and at home. After movies are shown on movie screens for a period of weeks or months, they may be marketed through several other media. They are shown on pay television or cable television, and sold or rented on DVD disks or videocassette tapes, so that people can watch the movies at home. You can also download or stream movies. Older movies are shown on television broadcasting stations.
+                The Simple English Wiktionary has a definition for: movie.
+                A movie camera or video camera takes pictures very quickly, usually at 24 or 25 pictures (frames) every second. When a movie projector, a computer, or a television shows the pictures at that rate, it looks like the things shown in the set of pictures are really moving. Sound is either recorded at the same time, or added later. The sounds in a movie usually include the sounds of people talking (which is called dialogue), music (which is called the "soundtrack"), and sound effects, the sounds of activities that are happening in the movie (such as doors opening or guns being fired). In the 20th century the camera used photographic film. The product is still often called a "film" even though there usually is no film.</p>
+            </article>
+
+            <article class="hide-block" id="avengers">
+                <header>
+                    <h2>Avengers: EndGame (2019)
+                        <img src="images/4stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/avengers.jpg" alt="Avengers: EndGame (2019)" class="banner">
+                <p>The grave course of events set in motion by Thanos that wiped out half the universe and fractured the Avengers ranks compels the remaining Avengers to take one final stand in Marvel Studios' grand conclusion to twenty-two films, "Avengers: Endgame".<br><br> Cast: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Brie Larson and Paul Rudd.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>PG-13 (for sequences of sci-fi violence and action, and some language)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Action & Adventure, Drama, Science Fiction & Fantasy</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Joe Russo, Anthony Russo</td></tr>
+                    <tr><td class="left">Written By: </td><td>Christopher Markus, Stephen McFeely</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Apr 26, 2019  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Jul 30, 2019</td></tr>
+                    <tr><td class="left">Runtime: </td><td>182 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Marvel Studios</td></tr>
+                </table>
+            </article>
+            
+            <article class="hide-block" id="gladiator">
+                <header>
+                    <h2>Gladiator (2000)
+                        <img src="images/4-5stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/gladiator.jpg" alt="Gladiator (2000)" class="banner">
+                <p>A man robbed of his name and his dignity strives to win them back, and gain the freedom of his people, in this epic historical drama from director Ridley Scott. In the year 180, the death of emperor Marcus Aurelius (Richard Harris) throws the Roman Empire into chaos. Maximus (Russell Crowe) is one of the Roman army's most capable and trusted generals and a key advisor to the emperor. As Marcus' devious son Commodus (Joaquin Phoenix) ascends to the throne, Maximus is set to be executed. He escapes, but is captured by slave traders. Renamed Spaniard and forced to become a gladiator, Maximus must battle to the death with other men for the amusement of paying audiences. His battle skills serve him well, and he becomes one of the most famous and admired men to fight in the Colosseum. Determined to avenge himself against the man who took away his freedom and laid waste to his family, Maximus believes that he can use his fame and skill in the ring to avenge the loss of his family and former glory. As the gladiator begins to challenge his rule, Commodus decides to put his own fighting mettle to the test by squaring off with Maximus in a battle to the death. Gladiator also features Derek Jacobi, Connie Nielsen, Djimon Hounsou, and Oliver Reed, who died of a heart attack midway through production.<br><br> Cast: Russell Crowe, Joaquin Phoenix, Connie Nielsen, Richard Harris and Oliver Reed.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (for intense graphic combat)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Action & Adventure, Classics, Drama</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Ridley Scott</td></tr>
+                    <tr><td class="left">Written By: </td><td>David H. Franzoni, William Nicholson, John Logan</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>May 5, 2000  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Nov 21, 2000</td></tr>
+                    <tr><td class="left">Runtime: </td><td>171 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Dreamworks Distribution LLC</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="taken">
+                <header>
+                    <h2>Taken (1998)
+                        <img src="images/4stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/taken.jpg" alt="Taken (1998)" class="banner">
+                <p>A man being held hostage discovers others besides his captors have it in for him in this taut thriller. Ethan Grover (Dabney Coleman) is a successful businessman who has made more than his share of enemies. His wife, Judy (Linda Smith), has been having an affair with Allan (Stewart Bick), one of Ethan's partners who has been embezzling money from the firm. Syd (Michael Rudder), Ethan's accountant, has been in cahoots with Allan, investing in a dubious real estate venture. And Alex (Brett Watson), Judy's son from an earlier marriage, is a drug addict who has been draining his stepfather's bank account to feed his habit. So when Ethan is kidnapped and held for a two-million-dollar ransom, his immediate family and closest business associates don't immediately come to his aid. Ethan's loyal secretary, Sandra (Dorothee Berryman), tries to untangle the web of deceit and betrayal that has enveloped him while Ethan tries to win the friendship of his kidnappers.<br><br> Cast: Liam Neeson, Maggie Grace, Famke Janssen and Katie Cassidy.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (adult situations)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Drama, Mystery & Suspense</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Max Fischer</td></tr>
+                    <tr><td class="left">Written By: </td><td>Pierre Lapointe</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Mar 15, 2005</td></tr>
+                    <tr><td class="left">Runtime: </td><td>105 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Avalanche Entertainment</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="hangover">
+                <header>
+                    <h2>The Hangover (2009)
+                        <img src="images/4stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/hangover.jpg" alt="The Hangover (2009)" class="banner">
+                <p>A blowout Las Vegas bachelor party turns into a race against time when three hung-over groomsmen awaken after a night of drunken debauchery to find that the groom has gone missing, and attempt to get him to the alter in time for his wedding. In 48 hours, Doug is scheduled to walk down the aisle, effectively ending his reign as a rowdy bachelor. Realizing that this is their last blowout with their best friend, Doug's groomsmen organize a Sin City bachelor bash he'll never forget. The next morning, the groomsmen come to in their Caesar's Palace suite to find a tiger in the bathroom and a six-month-old baby tucked away in the closet. Unfortunately, Doug is nowhere to be found. With no memory of the previous night's transgressions and precious little time to spare, the trio sets out in a hazy attempt to retrace their steps and discover exactly where things went wrong. Will they find Doug in time to get him to the wedding back in Los Angeles, or will his bride experience the sharp sting of disappointment when she walks down the aisle to discover that her future husband is nowhere to be found?<br><br> Cast: Bradley Cooper, Ed Helms, Zach Galifianakis, Heather Graham, Justin Bartha and Jeffrey Tambor.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (for pervasive language, sexual content including nudity, and some drug material)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Comedy</td></tr>
+                    <tr><td class="left">Directed By:  </td><td>Todd Phillips</td></tr>
+                    <tr><td class="left">Written By: </td><td>Jon Lucas, Todd Phillips, Scott Moore</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Jun 5, 2009  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Dec 15, 2009</td></tr>
+                    <tr><td class="left">Box Office: </td><td>$277,313,371</td></tr>
+                    <tr><td class="left">Runtime: </td><td>100 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Warner Bros. Pictures</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="liar">
+                <header>
+                    <h2>Liar Liar (1997)
+                        <img src="images/4-5stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/liar.jpg" alt="Liar Liar (1997)" class="banner">
+                <p>An attorney who tells the truth for 24 hours straight? This has got to be the movies! Fletcher Reede (Jim Carrey) is a lawyer obsessed with his career, and he's devoted his life to bending the truth to his advantage. This habit has broken up his marriage to Audrey (Maura Tierney) and isn't doing much good for his relationship with his young son Max (Justin Cooper). Fletcher repeatedly promised Max that he'll be there for Max's eighth birthday party, but when an important assignment comes up at work, Fletcher calls Audrey and makes an excuse so flimsy that even Max can see through it. When it comes time to blow out the candles on his cake, Max makes a wish: that his Dad could go just one day without telling a lie. Suddenly, Max finds himself physically incapable of saying anything that isn't true -- which, given the divorce settlement case he's just been handed, is going to make his next day in court very interesting indeed. While designed to show off a warmer and more likable side of Jim Carrey's personality, Liar Liar still revels in the broad physical comedy that made Carrey a star in Ace Ventura, Pet Detective -- which makes sense, since both were directed by Tom Shadyac. Both Carrey's fans and foes will get a chuckle out of Swoosie Kurtz's tongue-in-cheek insult to the film's star in the blooper reel that runs under the final credits.<br><br> Cast: Jim Carrey, Maura Tierney, Justin Cooper, Jennifer Tilly, Cary Elwes, Amanda Donohoe, Jason Bernard, Swoosie Kurtz and Anne Haney.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>PG-13 (adult situations/language, violence)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Comedy</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Tom Shadyac</td></tr>
+                    <tr><td class="left">Written By: </td><td>Stephen Mazur, Paul Guay</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Jun 1, 1997  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Jan 20, 1998</td></tr>
+                    <tr><td class="left">Runtime: </td><td>87 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Universal Pictures</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="tag">
+                <header>
+                    <h2>Tag (2018)
+                        <img src="images/3stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/tag.jpg" alt="Tag (2018)" class="banner">
+                <p>For one month every year, five highly competitive friends hit the ground running in a no-holds-barred game of tag they've been playing since the first grade--risking their necks, their jobs and their relationships to take each other down with the battle cry "You're It!" This year, the game coincides with the wedding of their only undefeated player, which should finally make him an easy target. But he knows they're coming... and he's ready. Based on a true story, "Tag" shows how far some guys will go to be the last man standing.<br><br> Cast: Ed Helms, Jake Johnson, Annabelle Wallis, Hannibal Buress, Isla Fisher, Rashida Jones, Leslie Bibb, Jon Hamm and Jeremy Renner.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (for language throughout, crude sexual content, drug use and brief nudity)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Comedy</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Jeff Tomsic</td></tr>
+                    <tr><td class="left">Written By: </td><td>Rob McKittrick, Mark Steilen</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Jun 15, 2018  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Aug 28, 2018</td></tr>
+                    <tr><td class="left">Studio: </td><td>Warner Bros. Pictures</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="fight">
+                <header>
+                    <h2>Fight Club (1999)
+                        <img src="images/4-5stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/fight.jpg" alt="Fight Club (1999)" class="banner">
+                <p>In this darkly comic drama, Edward Norton stars as a depressed young man (named in the credits only as "Narrator") who has become a small cog in the world of big business. He doesn't like his work and gets no sense of reward from it, attempting instead to drown his sorrows by putting together the "perfect" apartment. He can't sleep and feels alienated from the world at large; he's become so desperate to relate to others that he's taken to visiting support groups for patients with terminal diseases so that he'll have people to talk to. One day on a business flight, he discovers Tyler Durden (Brad Pitt), a charming iconoclast who sells soap. Tyler doesn't put much stock in the materialistic world, and he believes that one can learn a great deal through pain, misfortune, and chaos. Tyler cheerfully challenges his new friend to a fight. Our Narrator finds that bare-knuckle brawling makes him feel more alive than he has in years, and soon the two become friends and roommates, meeting informally to fight once a week. As more men join in, the "fight club" becomes an underground sensation, even though it's a closely guarded secret among the participants. (First rule: Don't talk about fight club. Second rule: Don't talk about fight club.) But as our Narrator and Tyler bond through violence, a strange situation becomes more complicated when Tyler becomes involved with Marla (Helena Bonham Carter), whom our Narrator became infatuated with when they were both crashing the support-group circuit. Based on the novel by Chuck Palahniuk, Fight Club was directed by David Fincher, who previously directed Pitt in the thriller Seven.<br><br> Cast: Brad Pitt, Edward Norton, Helena Bonham Carter, Meat Loaf and Jared Leto.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (for disturbing and graphic depiction of violent anti-social behavior, sexuality and language)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Comedy, Drama</td></tr>
+                    <tr><td class="left">Directed By: </td><td>David Fincher</td></tr>
+                    <tr><td class="left">Written By: </td><td>Jim Uhls</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Oct 15, 1999  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Jun 6, 2000</td></tr>
+                    <tr><td class="left">Runtime: </td><td>139 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>20th Century Fox</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="pulp">
+                <header>
+                    <h2>Pulp Fiction (1994)
+                        <img src="images/4-5stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/pulp.jpg" alt="Pulp Fiction (1994)" class="banner">
+                <p>Outrageously violent, time-twisting, and in love with language, Pulp Fiction was widely considered the most influential American movie of the 1990s. Director and co-screenwriter Quentin Tarantino synthesized such seemingly disparate traditions as the syncopated language of David Mamet; the serious violence of American gangster movies, crime movies, and films noirs mixed up with the wacky violence of cartoons, video games, and Japanese animation; and the fragmented story-telling structures of such experimental classics as Citizen Kane, Rashomon, and La jetée. The Oscar-winning script by Tarantino and Roger Avary intertwines three stories, featuring Samuel L. Jackson and John Travolta, in the role that single-handedly reignited his career, as hit men who have philosophical interchanges on such topics as the French names for American fast food products.<br><br> Cast: John Travolta, Samuel L. Jackson, Uma Thurman, Harvey Keitel, Tim Roth, Amanda Plummer, Maria de Medeiros, Ving Rhames, Eric Stoltz, Rosanna Arquette, Christopher Walken and Bruce Willis.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (for strong graphic violence and drug use, pervasive strong language and some sexuality.)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Drama</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Quentin Tarantino</td></tr>
+                    <tr><td class="left">Written By: </td><td>Quentin Tarantino, Roger Avary</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Sep 23, 1994  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>May 19, 1998</td></tr>
+                    <tr><td class="left">Runtime: </td><td>154 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Miramax Films</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="godfather">
+                <header>
+                    <h2>The Godfather (1972)
+                        <img src="images/5stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/godfather.jpg" alt="The Godfather (1972)" class="banner">
+                <p>Popularly viewed as one of the best American films ever made, the multi-generational crime saga The Godfather is a touchstone of cinema: one of the most widely imitated, quoted, and lampooned movies of all time. Marlon Brando and Al Pacino star as Vito Corleone and his youngest son, Michael, respectively. It is the late 1940s in New York and Corleone is, in the parlance of organized crime, a "godfather" or "don," the head of a Mafia family. Michael, a free thinker who defied his father by enlisting in the Marines to fight in World War II, has returned a captain and a war hero. Having long ago rejected the family business, Michael shows up at the wedding of his sister, Connie (Talia Shire), with his non-Italian girlfriend, Kay (Diane Keaton), who learns for the first time about the family "business." A few months later at Christmas time, the don barely survives being shot by gunmen in the employ of a drug-trafficking rival whose request for aid from the Corleones' political connections was rejected. After saving his father from a second assassination attempt, Michael persuades his hotheaded eldest brother, Sonny (James Caan), and family advisors Tom Hagen (Robert Duvall) and Sal Tessio (Abe Vigoda) that he should be the one to exact revenge on the men responsible. Nominated for 11 Academy Awards and winning for Best Picture, Best Actor (Marlon Brando), and Best Adapted Screenplay, The Godfather was followed by a pair of sequels.<br><br> Cast: Marlon Brando, Al Pacino, James Caan, Richard Castellano, Robert Duvall, Sterling Hayden, John Marley, Richard Conte and Diane Keaton.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (N/A)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Drama</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Francis Ford Coppola</td></tr>
+                    <tr><td class="left">Written By: </td><td>Francis Ford Coppola, Mario Puzo</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Mar 24, 1972  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Oct 9, 2001</td></tr>
+                    <tr><td class="left">Runtime: </td><td>175 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Paramount Pictures</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="inception">
+                <header>
+                    <h2>Inception (2010)
+                        <img src="images/4-5stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/inception.jpg" alt="Inception (2010)" class="banner">
+                <p>Visionary filmmaker Christopher Nolan (Memento, The Dark Knight) writes and directs this psychological sci-fi action film about a thief who possesses the power to enter into the dreams of others. Dom Cobb (Leonardo DiCaprio) doesn't steal things, he steals ideas. By projecting himself deep into the subconscious of his targets, he can glean information that even the best computer hackers can't get to. In the world of corporate espionage, Cobb is the ultimate weapon. But even weapons have their weakness, and when Cobb loses everything, he's forced to embark on one final mission in a desperate quest for redemption. This time, Cobb won't be harvesting an idea, but sowing one. Should he and his team of specialists succeed, they will have discovered a new frontier in the art of psychic espionage. They've planned everything to perfection, and they have all the tools to get the job done. Their mission is complicated, however, by the sudden appearance of a malevolent foe that seems to know exactly what they're up to, and precisely how to stop them.<br><br> Cast: Leonardo DiCaprio, Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Ellen Page, Tom Hardy, Cillian Murphy, Tom Berenger and Michael Caine.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>PG-13 (for sequences of violence and action throughout)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Christopher Nolan</td></tr>
+                    <tr><td class="left">Written By: </td><td>Christopher Nolan</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Jul 16, 2010  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Dec 7, 2010</td></tr>
+                    <tr><td class="left">Box Office: </td><td>$292,568,851</td></tr>
+                    <tr><td class="left">Runtime: </td><td>148 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Warner Bros. Pictures</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="interstellar">
+                <header>
+                    <h2>Interstellar (2014)
+                        <img src="images/4stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/interstellar.jpg" alt="Interstellar (2014)" class="banner">
+                <p>In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Bland, a brilliant N.A.S.A. physicist, is working on plans to save mankind by transporting Earth's population to a new home via a womhole. But first, Brand must send former N.A.S.A. pilot Cooper and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.<br><br> Cast: Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn and Michael Caine.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>PG-13 (for some intense perilous action and brief strong language)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Action & Adventure, Science Fiction & Fantasy</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Christopher Nolan</td></tr>
+                    <tr><td class="left">Written By: </td><td>Christopher Nolan, Jonathan Nolan</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Nov 7, 2014  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Mar 31, 2015</td></tr>
+                    <tr><td class="left">Box Office: </td><td>$158,737,441</td></tr>
+                    <tr><td class="left">Runtime: </td><td>169 minutes</td></tr>
+                    <tr><td class="left">Studio: </td><td>Paramount Pictures</td></tr>
+                </table>
+            </article>
+        
+            <article class="hide-block" id="matrix">
+                <header>
+                    <h2>The Matrix (1999)
+                        <img src="images/4-5stars.png" alt="Four Stars" class="star">
+                    </h2>
+                </header>
+                <img src="images/matrix.jpg" alt="The Matrix (1999)" class="banner">
+                <p>What if virtual reality wasn't just for fun, but was being used to imprison you? That's the dilemma that faces mild-mannered computer jockey Thomas Anderson (Keanu Reeves) in The Matrix. It's the year 1999, and Anderson (hacker alias: Neo) works in a cubicle, manning a computer and doing a little hacking on the side. It's through this latter activity that Thomas makes the acquaintance of Morpheus (Laurence Fishburne), who has some interesting news for Mr. Anderson -- none of what's going on around him is real. The year is actually closer to 2199, and it seems Thomas, like most people, is a victim of The Matrix, a massive artificial intelligence system that has tapped into people's minds and created the illusion of a real world, while using their brains and bodies for energy, tossing them away like spent batteries when they're through. Morpheus, however, is convinced Neo is "The One" who can crack open The Matrix and bring his people to both physical and psychological freedom. The Matrix is the second feature film from the sibling writer/director team of Andy Wachowski and Larry Wachowski, who made an impressive debut with the stylish erotic crime thriller Bound.<br><br> Cast: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving and Joe Pantoliano.</p>
+                <table>
+                    <tr><td class="left">Rating: </td><td>R (for sci-fi violence and brief language)</td></tr>
+                    <tr><td class="left">Genre: </td><td>Action & Adventure, Science Fiction & Fantasy</td></tr>
+                    <tr><td class="left">Directed By: </td><td>Lilly Wachowski, Lana Wachowski</td></tr>
+                    <tr><td class="left">Written By: </td><td>Lana Wachowski, Lilly Wachowski</td></tr>
+                    <tr><td class="left">In Theaters: </td><td>Mar 31, 1999  Wide</td></tr>
+                    <tr><td class="left">Disc/Streaming: </td><td>Sep 21, 1999</td></tr>
+                    <tr><td class="left">Runtime: </td><td>136 minutesv
+                    <tr><td class="left">Studio: </td><td>Warner Bros. Pictures</td></tr>
+                </table>
+            </article>
+        </section>
+
+        <aside id="side">
+            <h1>News!</h1>
+            <table id="tableoscar">
+            <caption>Here you can check the Oscars 2020 Winners:</caption>
+            
+                <tr><td class="top">Award</td><td class="top">Winner</td></tr>
+                <tr><td>Best Picture</td><td>Parasite</td></tr>
+                <tr><td>Best Actress</td><td>Renée Zellweger (Judy)</td></tr>
+                <tr><td>Best Actor</td><td>Joaquin Phoenix (Joker)</td></tr>
+                <tr><td>Best Supporting Actress</td><td>Laura Dern (Marriage Story)</td></tr>
+                <tr><td>Best Supporting Actor</td><td>Brad Pitt (Once Upon a Time in Hollywood)</td></tr>
+                <tr><td>Best Director</td><td>Bong Joon Ho (Parasite)</td></tr>
+                <tr><td>Best Animated Feature Film</td><td>Toy Story 4</td></tr>
+                <tr><td>Best Documentary Feature</td><td>American Factory</td></tr>
+                <tr><td>Best International Feature Film</td><td>Parasite (South Korea)</td></tr>
+                <tr><td>Best Original Screenplay</td><td>Parasite</td></tr>
+                <tr><td>Best Adapted Screenplay</td><td>Jojo Rabbit</td></tr>
+                <tr><td>Best Cinematography</td><td>1917</td></tr>
+                <tr><td>Best Costume Design</td><td>Little Women</td></tr>
+                <tr><td>Best Visual Effects</td><td>1917</td></tr>
+                <tr><td>Best Makeup & Hairstyling</td><td>Bombshell</td></tr>
+                <tr><td>Best Original Song</td><td>(I’m Gonna) Love Me Again - Rocketman</td></tr>
+                <tr><td>Best Original Score</td><td>Joker</td></tr>
+                <tr><td>Best Production Design</td><td>Once Upon a Time in Hollywood</td></tr>
+            </table>
+        </aside>
+        <script>
+            function populate(s1, s2) {
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+                s2.innerHTML = "";
+                if (s1.value == "null") {
+                    var optionArray = ["|", "initial|Choose a film"];
+                } else if (s1.value == "action") {
+                    var optionArray = ["|", "avengers|Avengers: Endgame", "gladiator|Gladiator", "taken|Taken"];
+                } else if (s1.value == "comedy") {
+                    var optionArray = ["|", "hangover|The Hangover", "liar|Liar Liar", "tag|Tag"];
+                } else if (s1.value == "drama") {
+                    var optionArray = ["|", "fight|Fight Club", "pulp|Pulp Fiction", "godfather|The God Father"];
+                } else if (s1.value == "science") {
+                    var optionArray = ["|", "inception|Inception", "interstellar|Interstellar", "matrix|The Matrix"];
+                } else if (s1.value !== "null") {
+                    document.getElementById("intial").classList.remove("hide-block");
+                }
+
+                for(var option in optionArray) {
+                    var pair = optionArray[option].split("|");
+                    var newOption = document.createElement("option");
+                    newOption.value = pair[0];
+                    newOption.innerHTML = pair[1];
+                    s2.options.add(newOption);
+                }  
+            }    
+                function show(option) {
+                    document.getElementById("initial").classList.add("hide-block");
+                    document.getElementById("avengers").classList.add("hide-block");
+                    document.getElementById("gladiator").classList.add("hide-block");
+                    document.getElementById("taken").classList.add("hide-block");
+                    document.getElementById("hangover").classList.add("hide-block");
+                    document.getElementById("liar").classList.add("hide-block");
+                    document.getElementById("tag").classList.add("hide-block");
+                    document.getElementById("fight").classList.add("hide-block");
+                    document.getElementById("pulp").classList.add("hide-block");
+                    document.getElementById("godfather").classList.add("hide-block");
+                    document.getElementById("inception").classList.add("hide-block");
+                    document.getElementById("interstellar").classList.add("hide-block");
+                    document.getElementById("matrix").classList.add("hide-block");
+
+                    var film = document.getElementById("films").value;
+                    document.getElementById(film).classList.remove("hide-block");
+                }
+        </script>
+        <footer>
+            <p>Copyright &copy; 2020 - by Fernando Amatuzzi </br>
+                <a href="http://facebook.com/feamatuzzi" target="blank">Facebook</a> | <a href="http://instagram.com/feamatuzzi" target="blank">Instagram</a></p>
+        </footer>
+    </div>
+</body>
+</html>
